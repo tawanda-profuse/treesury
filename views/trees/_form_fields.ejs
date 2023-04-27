@@ -5,15 +5,16 @@
   </div>
   <div class="form-item">
     <label>Family (Genus)</label>
-    <select name="category"> 
+    <select id="category-selector" onchange="this.nextElementSibling.value=this.value;">
       <% categories.forEach(category => { %>
         <% if (category.id === tree.category) { %>
           <option selected label="<%= category.name %>" value="<%= category.id %>">
         <% } else { %>
           <option label="<%= category.name %>" value="<%= category.id %>">
         <% } %>
-      <% }) %>
+        <% }) %>
     </select>
+    <input type="text" name="category" id="category-input" value="" placeholder="Add new Genus...">
   </div>
 </div>
 <div class="form-row">
