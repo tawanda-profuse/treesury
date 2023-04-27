@@ -1,1 +1,3 @@
-The fonts were created using transfonter.org
+# Treesury
+
+A web application that stores information about trees.
