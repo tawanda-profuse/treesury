@@ -77,7 +77,7 @@ body {
   text-decoration: none;
   border: var(--karat) 5px solid;
   background: var(--karat);
-  color: var(--clouds);
+  color: #fff;
   border-radius: 10px;
   padding: 4px 16px;
   animation: up-and-down 0.5s ease-out infinite;
@@ -110,7 +110,7 @@ body {
   margin: auto;
   padding: 20px;
   background: var(--grass);
-  color: var(--ground);
+  color: #fff;
   text-align: center;
 }
 
@@ -155,7 +155,7 @@ body {
 
 #section-c .box-2 {
   background: var(--grass);
-  color: var(--ground);
+  color: #fff;
   flex-basis: 100%;
   padding: 20px;
 }
