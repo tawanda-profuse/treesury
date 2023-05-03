@@ -225,7 +225,7 @@
   }
   
   .btn:hover {
-    background: yellow;
+    background: var(--karat);
     color: green;
   }
   

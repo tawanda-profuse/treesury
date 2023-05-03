@@ -5,17 +5,17 @@
   </div>
   <div class="form-item">
     <label>Family (Genus)</label>
-    <select id="category-selector" onchange="this.nextElementSibling.value=this.value;">
-      <% categories.forEach(category => { %>
-        <% if (category.id === tree.category) { %>
+    <select id="category-selector" name="category">
+      <% categories.forEach(category=> { %>
+        <% if (category.id===tree.category) { %>
           <option selected label="<%= category.name %>" value="<%= category.id %>">
-        <% } else { %>
+            <% } else { %>
           <option label="<%= category.name %>" value="<%= category.id %>">
-        <% } %>
-        <% }) %>
+            <% } %>
+              <% }) %>
     </select>
-    <input type="text" name="category" id="category-input" value="" placeholder="Add new Genus...">
   </div>
+  <a class="new-category" title="Add new category" href="/categories/new"><i class="fas fa-plus"></i></a>
 </div>
 <div class="form-row">
   <div class="form-item form-item-no-grow">

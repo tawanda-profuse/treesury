@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="form-row form-row-end">
-    <button class="btn btn-primary" type="submit">Search</button>
+    <button class="btn btn-primary search-button" type="submit"><i class="fas fa-search"></i></button>
   </div>
 </form>
 <br>
@@ -15,8 +15,8 @@
   <div class="author-row">
     <div class="author-name"><%= category.name %></div>
     <div class="btn-row">
-      <a class="btn btn-primary" href="/categories/<%= category.id %>">View</a>
-      <a class="btn btn-primary" href="/categories/<%= category.id %>/edit">Edit</a>
+      <a class="btn btn-primary view-button" href="/categories/<%= category.id %>" title="View category"><i class="fas fa-eye"></i></a>
+      <a class="btn btn-primary edit-button" href="/categories/<%= category.id %>/edit" title="Edit category"><i class="fas fa-pen"></i></a>
       <%- include('../partials/deleteForm',
                   { url: `/categories/${category.id}` }) %>
     </div>

@@ -39,8 +39,6 @@ app.set('layout', 'layouts/layout')
 // Excluding the layouts from the web pages
 app.set('layout landing', false); 
 app.set('layout index', false); 
-app.set('layout login', false); 
-app.set('layout register', false); 
 
 // Express body parser
 app.use(bodyParser.urlencoded({

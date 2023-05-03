@@ -7,6 +7,7 @@
   .book-cover {
     width: var(--book-cover-width);
     height: calc(var(--book-cover-width) / var(--book-cover-aspect-ratio));
+    border-radius: 8px;
   }
   .book-cover-large {
     --book-cover-width: var(--book-cover-width-large);
@@ -18,13 +19,20 @@
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fill, var(--book-cover-width));
   }
+
+  .book-grid img{
+    border-radius: 10px;
+  }
+
   .book-grid a:hover{
     transform: scale(0.9);
     transition: ease-in-out .2s;
+    color: var(--karat);
   }
   .book-grid a{
     text-decoration: none;
     color: green;
+    text-align: center;
   }
   .book-grid-large {
     grid-template-columns: repeat(auto-fill, var(--book-cover-width-large));
@@ -50,14 +58,8 @@
   }
   
   .book-details-btn-grid {
-    display: grid;
-    justify-items: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    grid-template-areas:
-      "edit delete"
-      "author author";
-    grid-gap: .5rem;
+    display: flex;
+    justify-content: space-between;
     margin-top: .5rem;
   }
   

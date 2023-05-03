@@ -10,6 +10,7 @@ const treeSchema = new mongoose.Schema({
   },
   coverImage: {
     type: Buffer,
+    // default: '',
     required: true
   }, 
   coverImageType: {

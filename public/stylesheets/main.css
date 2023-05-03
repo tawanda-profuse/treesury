@@ -5,6 +5,7 @@
 @import 'shared/form.css';
 @import 'shared/author.css';
 @import 'shared/books.css';
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
 :root {
   font-family: 'Gotham Rounded';
@@ -18,21 +19,23 @@
 
 body {
   background: white;
+  /* Find another picture: */
+  /* background: url(/images/amazon-forest.jpg); */
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  margin-bottom: 3rem;
+  max-width: 80%;
+  margin: 3rem auto;
 }
 
 .inner-container {
-  margin: 0 2rem;
+  margin: 100px auto;
 }
 
 .page-header {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: 'Darumadrop One', cursive;
 }
 .error-message {
   color: red;
