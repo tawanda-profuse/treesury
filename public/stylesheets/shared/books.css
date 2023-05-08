@@ -41,6 +41,19 @@
   .book-details {
     display: flex;
   }
+
+  @media (width < 1150px){
+    .book-details{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .book-details-grid {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
   
   .book-details-label {
     font-size: 1.2rem;
@@ -53,7 +66,8 @@
     align-content: flex-start;
     align-items: center;
     grid-gap: 1rem;
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: repeat(auto-fill, 500px);
     margin-left: 200px;
   }
   

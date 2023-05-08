@@ -19,8 +19,6 @@
 
 body {
   background: white;
-  /* Find another picture: */
-  /* background: url(/images/amazon-forest.jpg); */
 }
 
 .container {
@@ -33,7 +31,7 @@ body {
 }
 
 .page-header {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   font-family: 'Darumadrop One', cursive;
 }
